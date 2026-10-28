@@ -11,6 +11,8 @@ This folder is a static academic website: plain HTML and one stylesheet, with no
 | `publications.html` | The full publication list, numbered as in the CV |
 | `talks.html` | Invited plenary talks, colloquia and seminars, and contributed talks |
 | `teaching.html` | Teaching, mentoring, outreach and professional service |
+| `cooking-gardening.html` | A photo gallery in two sections, garden and kitchen. Clicking a photo opens it in a full-screen viewer, and each photo's `alt` text doubles as its caption there. |
+| `assets/cooking-gardening/` | The gallery photos: `name.jpg` (1600 pixels on the long side, for the viewer) and `name-sm.jpg` (800 pixels, for the grid). All photo metadata, including GPS location, has been removed. |
 | `Gendler_CV.pdf` | The CV, linked from every page |
 | `assets/style.css` | All styling for every page, including dark mode and phone layout |
 | `assets/favicon.svg` | The browser-tab icon, a reflexive lattice hexagon |
@@ -23,6 +25,7 @@ Until the domain is set up, the site is live at https://nvgendler.github.io/naom
 
 - **New paper:** add an `<li class="pub">` block at the top of the right year in `publications.html`, and optionally a news line in `index.html`.
 - **New talk:** add an `<li>` at the top of the right list in `talks.html`.
+- **New gallery photo:** remove its location data first (iPhone photos record GPS coordinates), save both sizes in `assets/cooking-gardening/`, and copy an existing `<a>…</a>` line in `cooking-gardening.html`, changing the file names, `alt` text, `width` and `height`.
 - **New CV:** replace `Gendler_CV.pdf`, keeping the file name the same so that the links keep working.
 - Change the "Updated" date in the footers when you make substantive changes.
 
