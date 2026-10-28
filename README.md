@@ -20,7 +20,7 @@ This folder is a static academic website: plain HTML and one stylesheet, with no
 | `assets/headshot.jpg` | The portrait on the home page: 600 × 750 pixels, with all photo metadata (including GPS location) removed. To change it, replace it with another 4:5 photo of the same name, and strip location data first. If the file is missing, the home page simply shows no photo. |
 | `404.html` | The page shown for broken links |
 
-Until the domain is set up, the site is live at https://nvgendler.github.io/naomi-gendler.com/. There is deliberately no `CNAME` file yet: with one, GitHub would redirect that address to naomi-gendler.com before the domain exists.
+The site is live at https://naomi-gendler.com/. The old address, https://nvgendler.github.io/naomi-gendler.com/, redirects there.
 
 ## Routine updates
 
@@ -39,31 +39,28 @@ python3 -m http.server 8137 --directory ~/naomi-gendler.com
 
 Then open http://localhost:8137 in a browser.
 
-## Putting it online at naomi-gendler.com
+## Hosting and domain (set up 28 October 2026)
 
-1. **Register the domain.** As of 28 October 2026, naomi-gendler.com is unregistered. Buy it from any registrar, for example Cloudflare Registrar, Porkbun or Namecheap. It costs roughly $10–15 per year.
-2. **Repository and Pages (done 28 October 2026).** The site is in the public repository `nvgendler/naomi-gendler.com`, and GitHub Pages deploys it from `main` at `/ (root)`.
-3. **Point the domain at GitHub.** At the registrar, add these DNS records:
+- **Domain:** naomi-gendler.com, registered at Porkbun (registry expiry 28 October 2027). Keep auto-renew on at Porkbun, because a lapsed domain can be registered by someone else.
+- **Hosting:** GitHub Pages deploys the public repository `nvgendler/naomi-gendler.com` from `main` at `/ (root)`. The `CNAME` file tells Pages to serve the custom domain; don't delete it.
+- **HTTPS:** enforced. GitHub issues and renews the certificate automatically.
+- **DNS records at Porkbun** (for reference, if they ever need to be re-entered):
 
-   | Type | Name | Value |
-   | --- | --- | --- |
-   | A | `@` | `185.199.108.153` |
-   | A | `@` | `185.199.109.153` |
-   | A | `@` | `185.199.110.153` |
-   | A | `@` | `185.199.111.153` |
-   | AAAA | `@` | `2606:50c0:8000::153` |
-   | AAAA | `@` | `2606:50c0:8001::153` |
-   | AAAA | `@` | `2606:50c0:8002::153` |
-   | AAAA | `@` | `2606:50c0:8003::153` |
-   | CNAME | `www` | `nvgendler.github.io` |
+  | Type | Host | Answer |
+  | --- | --- | --- |
+  | A | *(blank)* | `185.199.108.153` |
+  | A | *(blank)* | `185.199.109.153` |
+  | A | *(blank)* | `185.199.110.153` |
+  | A | *(blank)* | `185.199.111.153` |
+  | AAAA | *(blank)* | `2606:50c0:8000::153` |
+  | AAAA | *(blank)* | `2606:50c0:8001::153` |
+  | AAAA | *(blank)* | `2606:50c0:8002::153` |
+  | AAAA | *(blank)* | `2606:50c0:8003::153` |
+  | CNAME | `www` | `nvgendler.github.io` |
 
-   If you use Cloudflare, set these records to "DNS only" (grey cloud) so that GitHub can issue the HTTPS certificate.
-4. **Set the custom domain.** In the repository, go to Settings → Pages, enter `naomi-gendler.com` under "Custom domain", and save. GitHub commits a `CNAME` file for you, so pull before editing locally again.
-5. **Turn on HTTPS.** Once DNS has propagated, which usually takes minutes to an hour, tick "Enforce HTTPS" on the Pages settings page.
-6. **Verify the domain (recommended).** In your GitHub account settings, go to Pages → "Add a domain" and add the TXT record it gives you. Verification stops anyone else's repository from claiming the domain if Pages is ever switched off.
+- **Still recommended: verify the domain with GitHub.** In your GitHub account settings, go to Pages → "Add a domain", enter `naomi-gendler.com`, and add the TXT record it shows at Porkbun. Verification stops anyone else's repository from claiming the domain if Pages is ever switched off.
 
 ## After launch
 
-- Change the website line in the CV source from `naomigendler.wixsite.com/home` to `naomi-gendler.com`, then replace `Gendler_CV.pdf`.
 - Update the website field on INSPIRE, ORCID and any job-application portals.
 - On the old Wix site, add a line saying the site has moved to naomi-gendler.com. Free Wix sites cannot redirect automatically.
