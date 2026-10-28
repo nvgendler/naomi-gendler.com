@@ -9,7 +9,8 @@ This folder is a static academic website: plain HTML and one stylesheet, with no
 | `index.html` | The home page: bio, contact links, research areas, and recent and upcoming news |
 | `research.html` | Descriptions of the three research themes, each with key papers |
 | `publications.html` | The full publication list, numbered as in the CV |
-| `talks.html` | Invited plenary talks, colloquia and seminars, and contributed talks |
+| `talks.html` | Recorded talks (video cards that play in place), then invited plenary talks, colloquia and seminars, and contributed talks, with a "Video" link on each talk that has a recording |
+| `assets/talks/` | Thumbnails for the recorded-talk cards (640 × 360) |
 | `teaching.html` | Teaching, mentoring, outreach and professional service |
 | `cooking-gardening.html` | A photo gallery in two sections, garden and kitchen. Clicking a photo opens it in a full-screen viewer, and each photo's `alt` text doubles as its caption there. |
 | `assets/cooking-gardening/` | The gallery photos: `name.jpg` (1600 pixels on the long side, for the viewer) and `name-sm.jpg` (800 pixels, for the grid). All photo metadata, including GPS location, has been removed. |
@@ -24,7 +25,8 @@ Until the domain is set up, the site is live at https://nvgendler.github.io/naom
 ## Routine updates
 
 - **New paper:** add an `<li class="pub">` block at the top of the right year in `publications.html`, and optionally a news line in `index.html`.
-- **New talk:** add an `<li>` at the top of the right list in `talks.html`.
+- **New talk:** add an `<li>` at the top of the right list in `talks.html`. If it was recorded, add `<a class="tag tag-link" href="VIDEO-URL">Video</a>` right after its title.
+- **New featured video:** save the thumbnail as `assets/talks/VIDEO-ID.jpg` (YouTube's is at `https://i.ytimg.com/vi/VIDEO-ID/maxresdefault.jpg`), then copy an `<article class="video">` block in `talks.html` and change the ID, title, event and running time. Keep the number of cards even, so the two-column grid stays complete.
 - **New gallery photo:** remove its location data first (iPhone photos record GPS coordinates), save both sizes in `assets/cooking-gardening/`, and copy an existing `<a>…</a>` line in `cooking-gardening.html`, changing the file names, `alt` text, `width` and `height`.
 - **New CV:** replace `Gendler_CV.pdf`, keeping the file name the same so that the links keep working.
 - Change the "Updated" date in the footers when you make substantive changes.
