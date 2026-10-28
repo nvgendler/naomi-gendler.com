@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research · Naomi Gendler</title>
+<meta name="description" content="Research of Naomi Gendler: the string theory axiverse, quantum gravity constraints on effective field theories, and the geometry of Calabi–Yau manifolds.">
+<link rel="canonical" href="https://naomi-gendler.com/research.html">
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111317" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="site-name" href="./">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="20,12 20,4 12,4 4,12 4,20 12,20" fill="none" stroke="var(--accent)" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="12" r="1.8" fill="var(--accent)"/></svg>
+      Naomi Gendler
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="./">About</a></li>
+        <li><a href="research.html" aria-current="page">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="talks.html">Talks</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="Gendler_CV.pdf">CV</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="wrap">
+    <h1 class="page-title">Research</h1>
+    <p class="page-intro">String theory constrains the structure of the physics it can produce, but connecting those constraints to experiment requires computing the low-energy physics of explicit compactifications rather than of idealized examples. My collaborators and I do this at scale: we construct effective field theories for large ensembles of Calabi–Yau compactifications, often hundreds of thousands at a time, and ask which features are generic and which are testable. This program needs new results about the geometry of Calabi–Yau threefolds, and it provides a laboratory for testing proposed constraints from quantum gravity.</p>
+
+    <section class="theme" id="axiverse">
+      <h2>The string theory axiverse</h2>
+      <p>Axions are light scalar fields protected by an approximate shift symmetry. In string theory they arise from higher-form gauge fields integrated over cycles of the compact dimensions, so a single compactification typically contains many axions, with masses and couplings fixed by the geometry. This “axiverse” is one of the most promising places for string theory to make contact with experiment: axions can solve the strong CP problem, make up the dark matter, and leave signatures in laboratory searches and in cosmology.</p>
+      <p>Working with type IIB compactifications on Calabi–Yau orientifolds from the Kreuzer–Skarke list, which can contain up to 491 axions, we showed that the Peccei–Quinn mechanism solves the strong CP problem in a large class of compactifications, because quantum-gravitational contributions to the neutron electric dipole moment fall off rapidly as the number of axions grows (<span class="paper-ref">PQ Axiverse</span>). We found that axion–photon couplings are systematically suppressed relative to the inverse axion periodicity, so that these compactifications contain many invisible axions and a handful that may be detectable (<span class="paper-ref">Glimmers from the Axiverse</span>). We also showed that the QCD axion mass is strongly correlated with the topology of the compactification, so that a laboratory detection of axion dark matter would constrain the Hodge number <i>h</i><sup>1,1</sup> of the extra dimensions (<span class="paper-ref">Phys. Rev. Lett.</span> 2025). These predictions are controlled by the distribution of divisor volumes, which appears to be universal across the landscape and admits a simple model (<span class="paper-ref">Universality in the Axiverse</span>).</p>
+      <p>Related work studies the vacuum structure of axion potentials, fuzzy axion dark matter, constraints from cosmic reionization, and small-field inflation driven by string axions. Most recently, we computed axion couplings to matter explicitly in heterotic string theory for the first time, using neural networks to solve for the Ricci-flat metric and the Hermitian Yang–Mills bundle metric.</p>
+      <div class="key-papers">
+        <h3>Key papers</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2112.04503">PQ Axiverse</a> <span class="venue">JHEP 2023</span></li>
+          <li><a href="https://arxiv.org/abs/2309.13145">Glimmers from the Axiverse</a> <span class="venue">JCAP 2024</span></li>
+          <li><a href="https://arxiv.org/abs/2407.07143">Possible Implications of QCD Axion Dark Matter Constraints from Helioscopes and Haloscopes for the String Theory Landscape</a> <span class="venue">Phys. Rev. Lett. 2025</span></li>
+          <li><a href="https://arxiv.org/abs/2507.12516">Universality in the Axiverse</a> <span class="venue">JHEP 2025</span></li>
+          <li><a href="https://arxiv.org/abs/2609.20911">Calculating Axion–Matter Couplings in String Theory</a> <span class="venue">arXiv 2026</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="theme" id="swampland">
+      <h2>Quantum gravity and the Swampland</h2>
+      <p>Not every effective field theory can be coupled consistently to quantum gravity. The Swampland program seeks the criteria that distinguish those that can. Two central proposals are the Weak Gravity Conjecture, which requires states whose charge-to-mass ratio is at least that of an extremal black hole, and the Distance Conjecture, which predicts towers of states that become light at large distances in moduli space. Explicit compactifications are where these conjectures can be tested rather than assumed.</p>
+      <p>With Irene Valenzuela, I showed that in infinite-distance limits of <i>N</i>&nbsp;=&nbsp;2 compactifications of type IIB string theory, the BPS bound coincides with the black-hole extremality bound. This sharpens both conjectures in theories with many gauge and scalar fields, and in this setting implies the lower bound λ&nbsp;≥&nbsp;1/√6 on the rate at which the tower becomes light. With Ben Heidenreich, Liam McAllister, Jakob Moritz and Tom Rudelius, I developed a method to reconstruct the extended Kähler moduli space of a Calabi–Yau threefold from its Gopakumar–Vafa invariants, and used it to count BPS states in all favorable hypersurfaces with <i>h</i><sup>1,1</sup>&nbsp;≤&nbsp;4. Every example satisfies the lattice Weak Gravity Conjecture. With Cumrun Vafa, I studied the QCD axion in the dark dimension scenario, which is motivated by Swampland principles, and found that it is pushed into a narrow window of decay constants that near-future experiments can probe.</p>
+      <div class="key-papers">
+        <h3>Key papers</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2004.10768">Merging the Weak Gravity and Distance Conjectures Using BPS Extremal Black Holes</a> <span class="venue">JHEP 2021</span></li>
+          <li><a href="https://arxiv.org/abs/2212.10573">Moduli Space Reconstruction and Weak Gravity</a> <span class="venue">JHEP 2023</span></li>
+          <li><a href="https://arxiv.org/abs/2404.15414">Axions in the Dark Dimension</a> <span class="venue">JHEP 2024</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="theme" id="geometry">
+      <h2>The geometry of Calabi–Yau manifolds</h2>
+      <p>Making predictions from string compactifications requires knowing the geometry of Calabi–Yau threefolds, including their cones of curves and divisors, their moduli spaces and their enumerative invariants, in far more detail than classical methods provide, and for very large numbers of examples. Much of my work develops these tools, often in collaboration with mathematicians.</p>
+      <p>Euclidean D3-branes wrapping divisors generate the non-perturbative superpotential that stabilizes moduli, and Witten’s criterion for which divisors contribute assumes that they are smooth. We argued that effective divisors of Calabi–Yau threefolds are typically singular along rational curves, and generalized the counting of fermion zero modes to singular divisors (<span class="paper-ref">Superpotentials from Singular Divisors</span>). We proved that the numbers of topologically distinct, simply connected Calabi–Yau threefold hypersurfaces obtained from four-dimensional reflexive polytopes are 4, 27, 183, 1,184 and 8,036 for <i>h</i><sup>1,1</sup>&nbsp;=&nbsp;1 through 5 (<span class="paper-ref">Counting Calabi–Yau Threefolds</span>). Most recently, we found that the effective cone of a Calabi–Yau threefold can contain “holes”: divisor classes with no global sections, which we characterize across an ensemble of toric hypersurfaces (<span class="paper-ref">Holes in Calabi–Yau Effective Cones</span>).</p>
+      <div class="key-papers">
+        <h3>Key papers</h3>
+        <ul>
+          <li><a href="https://arxiv.org/abs/2204.06566">Superpotentials from Singular Divisors</a> <span class="venue">JHEP 2022</span></li>
+          <li><a href="https://arxiv.org/abs/2310.06820">Counting Calabi–Yau Threefolds</a> <span class="venue">arXiv 2023</span></li>
+          <li><a href="https://arxiv.org/abs/2603.11173">Holes in Calabi–Yau Effective Cones</a> <span class="venue">arXiv 2026</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="note">A complete list is on the <a href="publications.html">publications</a> page.</p>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>Naomi Gendler · School of Natural Sciences, Institute for Advanced Study</span>
+    <span>Updated October 2026</span>
+  </div>
+</footer>
+</body>
+</html>
