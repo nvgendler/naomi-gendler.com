@@ -108,6 +108,7 @@ h1, h2, h3 { font-family: var(--serif); font-weight: 600; line-height: 1.2; lett
 
 .page-title { font-size: clamp(2rem, 5vw, 2.4rem); font-weight: 500; letter-spacing: -0.02em; margin-bottom: 0.85rem; }
 .page-intro { color: var(--muted); margin-bottom: 2.75rem; }
+.page-title + section { margin-top: 2.25rem; }
 
 section + section { margin-top: 3.5rem; }
 
