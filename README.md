@@ -14,7 +14,7 @@ This folder is a static academic website: plain HTML and one stylesheet, with no
 | `Gendler_CV.pdf` | The CV, linked from every page |
 | `assets/style.css` | All styling for every page, including dark mode and phone layout |
 | `assets/favicon.svg` | The browser-tab icon, a reflexive lattice hexagon |
-| `assets/headshot.jpg` | (Optional; not yet added.) A portrait, about 4:5. If the file exists, it appears on the home page automatically. |
+| `assets/headshot.jpg` | The portrait on the home page: 600 × 750 pixels, with all photo metadata (including GPS location) removed. To change it, replace it with another 4:5 photo of the same name, and strip location data first. If the file is missing, the home page simply shows no photo. |
 | `404.html` | The page shown for broken links |
 
 Until the domain is set up, the site is live at https://nvgendler.github.io/naomi-gendler.com/. There is deliberately no `CNAME` file yet: with one, GitHub would redirect that address to naomi-gendler.com before the domain exists.
