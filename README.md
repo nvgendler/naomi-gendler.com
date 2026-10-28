@@ -19,6 +19,8 @@ This folder is a static academic website: plain HTML and one stylesheet, with no
 | `assets/favicon.svg` | The browser-tab icon, a reflexive lattice hexagon |
 | `assets/headshot.jpg` | The portrait on the home page: 600 × 750 pixels, with all photo metadata (including GPS location) removed. To change it, replace it with another 4:5 photo of the same name, and strip location data first. If the file is missing, the home page simply shows no photo. |
 | `404.html` | The page shown for broken links |
+| `sitemap.xml` | The list of pages for search engines. If you add a page, add a `<url>` line for it. |
+| `robots.txt` | Tells search engines they may index everything, and where the sitemap is |
 
 The site is live at https://naomi-gendler.com/. The old address, https://nvgendler.github.io/naomi-gendler.com/, redirects there.
 
@@ -62,5 +64,6 @@ Then open http://localhost:8137 in a browser.
 
 ## After launch
 
+- Add the domain to Google Search Console (a TXT record at Porkbun), submit `https://naomi-gendler.com/sitemap.xml`, and request indexing of the home page.
 - Update the website field on INSPIRE, ORCID and any job-application portals.
 - On the old Wix site, add a line saying the site has moved to naomi-gendler.com. Free Wix sites cannot redirect automatically.

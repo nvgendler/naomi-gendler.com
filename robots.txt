@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naomi-gendler.com/sitemap.xml
